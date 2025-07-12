@@ -1,0 +1,351 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '573233714025@s.whatsapp.net',
+    fromMe: false,
+    id: '31F302F738BEAC0BF667D38915154B36',
+    participant: undefined
+  },
+  messageTimestamp: 1752359955,
+  pushName: 'Knes Y knes Veterinaria',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'Hola',
+      previewType: 0,
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Knes Y knes Veterinaria',
+  body: 'Hola',
+  from: '573233714025'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_6d28855d-965d-4f9c-a4ec-6684fa45384e',
+  keyword: 'key_b227ce10-0ce7-4fff-b69e-e95b72af5cf3',
+  answer: '🙌 Hola, es un gusto saludarte, Bienvenido soy Kan, el 🤖 *Chatbot* de Knes y Knes 🏥 Veterinaria\n' +
+    '\n' +
+    'En que podemos ayudarte, por favor escribe el número de la opción que necesites: \n' +
+    '\n' +
+    '✅  "1", Consulta, para agendar una cita con uno de nuestros veterinarios 🩺👩‍⚕️👨🏻‍⚕️\n' +
+    '✅  "2", Control Perro, Incluye vacunas\n' +
+    '✅  "3", Control Gato, Incluye vacunas\n' +
+    '✅  "4", Hablar, para contactar uno de nuestros asesores\n' +
+    '\n' +
+    'En cualquier momento de la conversación puedes escribir la palabra "Menú", para volver al inicio',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '877bcfe4db32e70b78248a63df0be267'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573233714025@s.whatsapp.net',
+    fromMe: false,
+    id: 'B76BDDECEA871D538EE5EAD74F0F3E92',
+    participant: undefined
+  },
+  messageTimestamp: 1752359985,
+  pushName: 'Knes Y knes Veterinaria',
+  broadcast: false,
+  message: Message {
+    imageMessage: ImageMessage {
+      interactiveAnnotations: [],
+      scanLengths: [Array],
+      url: 'https://mmg.whatsapp.net/v/t62.7118-24/11897765_758960336850581_6434766564829131205_n.enc?ccb=11-4&oh=01_Q5Aa2AGmbbqnulLijriTN8hskbBLbVZ_d48RZLfnobYqSUsuYg&oe=689A439E&_nc_sid=5e03e0&mms3=true',
+      mimetype: 'image/jpeg',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      height: 1280,
+      width: 576,
+      mediaKey: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      directPath: '/v/t62.7118-24/11897765_758960336850581_6434766564829131205_n.enc?ccb=11-4&oh=01_Q5Aa2AGmbbqnulLijriTN8hskbBLbVZ_d48RZLfnobYqSUsuYg&oe=689A439E&_nc_sid=5e03e0',
+      mediaKeyTimestamp: [Long],
+      jpegThumbnail: [Uint8Array],
+      contextInfo: [ContextInfo],
+      scansSidecar: [Uint8Array],
+      midQualityFileSha256: [Uint8Array]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Knes Y knes Veterinaria',
+  body: '_event_media__17a63702-55ca-4e5e-adf1-581644b7a6ed',
+  from: '573233714025'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_7ed33baa-b2f7-4db1-b0f8-2319412ee1e3',
+  keyword: 'key_e6c44907-bfbc-4fdb-b56b-eb5fb450a214',
+  answer: '🩺👩‍⚕️👨🏻‍⚕️💉 La consulta a domicilio con uno de nuestros veterinarios, en la cual se diagnostica tu mascota y se informa el tratamiento a seguir, tiene un valor de $40.000 mil pesos, incluye el domicilio\n' +
+    '\n' +
+    '🗓¿Desea agendarlo?.\n' +
+    '\n' +
+    'por favor escribe la opción que necesites, ✅ Si,  ❎No',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object], [Object], [Object] ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '33ee805c8160529e4932e3dd5f542c61'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573233714025@s.whatsapp.net',
+    fromMe: false,
+    id: '4F67B523A35BC1EBD197FD7E371EBA65',
+    participant: undefined
+  },
+  messageTimestamp: 1752360009,
+  pushName: 'Knes Y knes Veterinaria',
+  broadcast: false,
+  message: Message {
+    conversation: 'No',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Knes Y knes Veterinaria',
+  body: 'No',
+  from: '573233714025'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_ce879350-6d88-44aa-ab50-6f273d76f419',
+  keyword: 'key_2afc5128-d34b-4de1-83c8-2f9c5c90df13',
+  answer: '¡Muchas gracias por contactarnos!, recuerda que en cualquier momento de la conversación puedes escribir 🤳🏼 la palabra "Menu", para volver al inicio 🏚',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'f8e41d765cb3c82258db500ecb94f56b'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573233714025@s.whatsapp.net',
+    fromMe: false,
+    id: 'A340A3BE4013E0CD1B8B04B6B37D23F2',
+    participant: undefined
+  },
+  messageTimestamp: 1752360039,
+  pushName: 'Knes Y knes Veterinaria',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Knes Y knes Veterinaria',
+  body: '1',
+  from: '573233714025'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_7ed45f5c-2db6-423a-ae03-390068e35e12',
+  keyword: 'key_3809e615-a94c-4eaa-93aa-4478ddca946c',
+  answer: '📝 Por favor ingrese su inquietud, recomendación o sugerencia, para que uno de nuestros asesores lo contacte',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'fb45b6e72ccf32f0258ec3c41a201d17'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573233714025@s.whatsapp.net',
+    fromMe: false,
+    id: '1635CBDB90D92CE58EE13D23189D2F9F',
+    participant: undefined
+  },
+  messageTimestamp: 1752360068,
+  pushName: 'Knes Y knes Veterinaria',
+  broadcast: false,
+  message: Message {
+    imageMessage: ImageMessage {
+      interactiveAnnotations: [],
+      scanLengths: [Array],
+      url: 'https://mmg.whatsapp.net/v/t62.7118-24/11978474_760621816309631_7626922256312262734_n.enc?ccb=11-4&oh=01_Q5Aa2AHq5ghsh9wN8fKYkjO6ipIhhTXNqpBLgJdAdZxcHFFxqg&oe=689A5120&_nc_sid=5e03e0&mms3=true',
+      mimetype: 'image/jpeg',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      height: 1280,
+      width: 576,
+      mediaKey: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      directPath: '/v/t62.7118-24/11978474_760621816309631_7626922256312262734_n.enc?ccb=11-4&oh=01_Q5Aa2AHq5ghsh9wN8fKYkjO6ipIhhTXNqpBLgJdAdZxcHFFxqg&oe=689A5120&_nc_sid=5e03e0',
+      mediaKeyTimestamp: [Long],
+      jpegThumbnail: [Uint8Array],
+      contextInfo: [ContextInfo],
+      scansSidecar: [Uint8Array],
+      midQualityFileSha256: [Uint8Array]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Knes Y knes Veterinaria',
+  body: '_event_media__104840fb-d0e4-4564-896a-a19992a3417e',
+  from: '573233714025'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_7ed45f5c-2db6-423a-ae03-390068e35e12',
+  keyword: 'key_3809e615-a94c-4eaa-93aa-4478ddca946c',
+  answer: '📝 Por favor ingrese su inquietud, recomendación o sugerencia, para que uno de nuestros asesores lo contacte',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'fb45b6e72ccf32f0258ec3c41a201d17'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573246843681@s.whatsapp.net',
+    fromMe: false,
+    id: '3AD1C6753CCD52C1488D',
+    participant: undefined
+  },
+  messageTimestamp: 1752360221,
+  pushName: '🐶❤️🐱',
+  broadcast: false,
+  message: Message {
+    conversation: 'Eeeee',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Eeeee',
+  from: '573246843681'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_7ed45f5c-2db6-423a-ae03-390068e35e12',
+  keyword: 'key_3809e615-a94c-4eaa-93aa-4478ddca946c',
+  answer: '📝 Por favor ingrese su inquietud, recomendación o sugerencia, para que uno de nuestros asesores lo contacte',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'fb45b6e72ccf32f0258ec3c41a201d17'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573246843681@s.whatsapp.net',
+    fromMe: false,
+    id: '3ABF7A93684AED198447',
+    participant: undefined
+  },
+  messageTimestamp: 1752360227,
+  pushName: '🐶❤️🐱',
+  broadcast: false,
+  message: Message {
+    conversation: 'NO',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'NO',
+  from: '573246843681'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573246843681@s.whatsapp.net',
+    fromMe: false,
+    id: '3A9BF4B931A5A6BC5B45',
+    participant: undefined
+  },
+  messageTimestamp: 1752360245,
+  pushName: '🐶❤️🐱',
+  broadcast: false,
+  message: Message {
+    conversation: 'Ok',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Ok',
+  from: '573246843681'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_7ed45f5c-2db6-423a-ae03-390068e35e12',
+  keyword: 'key_3809e615-a94c-4eaa-93aa-4478ddca946c',
+  answer: '📝 Por favor ingrese su inquietud, recomendación o sugerencia, para que uno de nuestros asesores lo contacte',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'fb45b6e72ccf32f0258ec3c41a201d17'
+}
