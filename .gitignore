@@ -1,2 +1,9 @@
-node_modules
+node_modules/
 bot_sessions/
+.env
+.DS_Store
+*.log
+.vscode/
+.idea/
+dist/
+build/
