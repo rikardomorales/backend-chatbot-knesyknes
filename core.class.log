@@ -3,17 +3,29 @@
     remoteJid: '89631806775400@lid',
     remoteJidAlt: '573054262668@s.whatsapp.net',
     fromMe: false,
-    id: 'AC7A6126AA8AF99AFA91D97976359118',
+    id: 'AC098F5539B11558A93D989A90C05131',
     participant: '',
     participantAlt: undefined,
     addressingMode: 'lid'
   },
   category: undefined,
-  messageTimestamp: 1778726829,
+  messageTimestamp: 1778768951,
   pushName: 'Ricardo',
   broadcast: false,
   message: Message {
-    conversation: 'Hola',
+    audioMessage: AudioMessage {
+      url: 'https://mmg.whatsapp.net/v/t62.7117-24/542731999_1530469068513849_2949286040056862918_n.enc?ccb=11-4&oh=01_Q5Aa4gHBQIcC4-7fZxSb0RnVjHJct5SzbeNvvhmxdlz5VUxuZg&oe=6A2D371E&_nc_sid=5e03e0&mms3=true',
+      mimetype: 'audio/ogg; codecs=opus',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      seconds: 10,
+      ptt: true,
+      mediaKey: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      directPath: '/v/t62.7117-24/542731999_1530469068513849_2949286040056862918_n.enc?ccb=11-4&oh=01_Q5Aa4gHBQIcC4-7fZxSb0RnVjHJct5SzbeNvvhmxdlz5VUxuZg&oe=6A2D371E&_nc_sid=5e03e0',
+      mediaKeyTimestamp: [Long],
+      waveform: [Uint8Array]
+    },
     messageContextInfo: MessageContextInfo {
       threadId: [],
       deviceListMetadata: [DeviceListMetadata],
@@ -21,107 +33,14 @@
       messageSecret: [Uint8Array]
     }
   },
-  body: 'Hola',
+  body: '_event_voice_note__9be47800-eee3-4951-bd8c-acbf41e71798',
   name: 'Ricardo',
   from: '573054262668',
   host: '573233714025'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_d050bea1-3b33-4285-ade6-c5c47fbb13bf',
-  keyword: 'key_7a57b1cc-51fc-41bf-8573-ba90c5535b84',
-  answer: '🙌 Hola, es un gusto saludarte\n' +
-    'Bienvenido soy Kan, el 🤖 *Chatbot* de Knes y Knes 🏥 Veterinaria\n' +
-    '\n' +
-    'En que podemos ayudarte, por favor escribe el número de la opción que necesites:',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: false,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: 'b2dedd08112b488fe47665b514df734c'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_46c8adb1-a6d8-4eba-9d93-e1dcff1782b8',
-  keyword: 'ans_d050bea1-3b33-4285-ade6-c5c47fbb13bf',
-  answer: '✅ "1" - Consulta a domicilio con veterinario 🩺👩‍⚕️👨🏻‍⚕️\n' +
-    '✅ "2" - Control Perro (incluye vacunas)\n' +
-    '✅ "3" - Control Gato (incluye vacunas)\n' +
-    '✅ "4" - Hablar con un asesor\n' +
-    '\n' +
-    'En cualquier momento puedes escribir "Menú" para volver al inicio',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: false,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: 'bd21f88cadcd2612e61d26dae1c6a175'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_1d3fa41e-b9f1-4490-a396-9585f9c12839',
-  keyword: 'ans_46c8adb1-a6d8-4eba-9d93-e1dcff1782b8',
-  answer: '__capture_only_intended__',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: true,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object],
-      [Object], [Object]
-    ],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '78173b55dbacc36adbf5df91ae088aee'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '89631806775400@lid',
-    remoteJidAlt: '573054262668@s.whatsapp.net',
-    fromMe: false,
-    id: 'AC7A1DBD50325F057A97F0436FE47246',
-    participant: '',
-    participantAlt: undefined,
-    addressingMode: 'lid'
-  },
-  category: undefined,
-  messageTimestamp: 1778726836,
-  pushName: 'Ricardo',
-  broadcast: false,
-  message: Message {
-    conversation: '1',
-    messageContextInfo: MessageContextInfo {
-      threadId: [],
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: '1',
-  name: 'Ricardo',
-  from: '573054262668',
-  host: '573233714025'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_1070e678-4f00-4e9c-a713-0cf906302862',
-  keyword: 'key_efc00879-ac84-42f2-9617-ef8364f5c357',
+  ref: 'ans_601c6846-5dea-4047-a4a9-37d06c4069b4',
+  keyword: 'key_85bfe342-c6dc-4e64-a96f-cd6a2abfbf04',
   answer: '🩺👩‍⚕️👨🏻‍⚕️💉 La consulta a domicilio con uno de nuestros veterinarios:\n' +
     '• Diagnóstico de tu mascota\n' +
     '• Información del tratamiento a seguir\n' +
@@ -141,102 +60,147 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '236a28fbbdf7b11fa595038081711bd8'
+  refSerialize: 'e327c75edb18e2e600d633141ff71d9f'
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '89631806775400@lid',
-    remoteJidAlt: '573054262668@s.whatsapp.net',
+    remoteJid: '120363379800460266@newsletter',
+    remoteJidAlt: undefined,
     fromMe: false,
-    id: 'AC0D78646D38273EF19EC3D74E773671',
+    id: '3AA46A5AA807B8A41DAA',
     participant: '',
     participantAlt: undefined,
-    addressingMode: 'lid'
+    addressingMode: 'pn',
+    server_id: '3480'
   },
   category: undefined,
-  messageTimestamp: 1778726843,
-  pushName: 'Ricardo',
+  messageTimestamp: 1778768941,
+  pushName: undefined,
   broadcast: false,
-  message: Message {
-    conversation: 'Si',
-    messageContextInfo: MessageContextInfo {
-      threadId: [],
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'Si',
-  name: 'Ricardo',
-  from: '573054262668',
+  message: Message { conversation: 'Buenos días lind@s 🫦' },
+  body: 'Buenos días lind@s 🫦',
+  name: undefined,
+  from: '120363379800460266@newsletter',
   host: '573233714025'
 }
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_6b7d774b-e94a-4a7f-a40c-32d1c7d0844f',
-  keyword: 'key_4ea26fcd-af5d-431a-8ba1-1a860d2a31a2',
-  answer: '📝 Por favor ingrese su dirección',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: true,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '3137e5d355df44f75d08911d1f2fccf0'
+Error al encolar (ID ans_87d32c48-d1d7-4ba8-abaf-36e62b23d874): Error: Queue item timeout after 50000ms
+    at Timeout._onTimeout (C:\RAMP\otro\chatbot-kyk\node_modules\@builderbot\bot\dist\index.cjs:845:24)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+[ERROR ID (ans_87d32c48-d1d7-4ba8-abaf-36e62b23d874)]:  Error: Connection Closed
+    at sendRawMessage (file:///C:/RAMP/otro/chatbot-kyk/node_modules/@builderbot/provider-baileys/node_modules/baileys/lib/Socket/socket.js:50:19)
+    at sendNode (file:///C:/RAMP/otro/chatbot-kyk/node_modules/@builderbot/provider-baileys/node_modules/baileys/lib/Socket/socket.js:69:16)
+    at file:///C:/RAMP/otro/chatbot-kyk/node_modules/@builderbot/provider-baileys/node_modules/baileys/lib/Socket/messages-send.js:729:19
+    at async file:///C:/RAMP/otro/chatbot-kyk/node_modules/@builderbot/provider-baileys/node_modules/baileys/lib/Utils/auth-utils.js:220:36 {
+  data: null,
+  isBoom: true,
+  isServer: false,
+  output: {
+    statusCode: 428,
+    payload: {
+      statusCode: 428,
+      error: 'Precondition Required',
+      message: 'Connection Closed'
+    },
+    headers: {}
+  }
+}
+Error en sendProviderAndSave (ID ans_87d32c48-d1d7-4ba8-abaf-36e62b23d874): Error: Connection Closed
+    at sendRawMessage (file:///C:/RAMP/otro/chatbot-kyk/node_modules/@builderbot/provider-baileys/node_modules/baileys/lib/Socket/socket.js:50:19)
+    at sendNode (file:///C:/RAMP/otro/chatbot-kyk/node_modules/@builderbot/provider-baileys/node_modules/baileys/lib/Socket/socket.js:69:16)
+    at file:///C:/RAMP/otro/chatbot-kyk/node_modules/@builderbot/provider-baileys/node_modules/baileys/lib/Socket/messages-send.js:729:19
+    at async file:///C:/RAMP/otro/chatbot-kyk/node_modules/@builderbot/provider-baileys/node_modules/baileys/lib/Utils/auth-utils.js:220:36 {
+  data: null,
+  isBoom: true,
+  isServer: false,
+  output: {
+    statusCode: 428,
+    payload: {
+      statusCode: 428,
+      error: 'Precondition Required',
+      message: 'Connection Closed'
+    },
+    headers: {}
+  }
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '89631806775400@lid',
-    remoteJidAlt: '573054262668@s.whatsapp.net',
+    remoteJid: '120363379800460266@newsletter',
+    remoteJidAlt: undefined,
     fromMe: false,
-    id: 'ACA15311F824AB2DA50D4799FA91F837',
+    id: '3ACB41662F2EBEBA27EA',
     participant: '',
     participantAlt: undefined,
-    addressingMode: 'lid'
+    addressingMode: 'pn',
+    server_id: '3481'
   },
   category: undefined,
-  messageTimestamp: 1778726851,
-  pushName: 'Ricardo',
+  messageTimestamp: 1778769007,
+  pushName: undefined,
   broadcast: false,
   message: Message {
-    conversation: 'Cll 1 44 44',
-    messageContextInfo: MessageContextInfo {
-      threadId: [],
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
+    imageMessage: ImageMessage {
+      interactiveAnnotations: [],
+      scanLengths: [],
+      annotations: [],
+      mimetype: 'image/jpeg',
+      caption: 'Para tu amiga Blanca Nieves que tiene 7 amiguitos 🫣  \n' +
+        'Aquí: https://rappi.onelink.me/BQFp/nqhldc71',
+      fileSha256: <Buffer 4b bb 3e a3 b5 b4 33 93 60 71 42 c9 3c 35 e6 d5 b5 93 90 9b ba da e4 18 05 fd 7a e3 0a 61 03 f6>,
+      fileLength: [Long],
+      height: 532,
+      width: 1320,
+      directPath: '/m1/v/t24/An8ajcYm4FAoXB8MwTDHepGIOpUH_n14K-KHQxGKOgEM3VVdvNo-luTcA36i7NxC9t2_AQ-nljv0PX2zy8xrMJxRuaD4WwCY6qx0bHGBQwZpNgXX2bLR5OrJwWN-91ndAQ?ccb=10-5&oh=01_Q5Aa4gGASczxmMvaoEoMZkqAwgAQof4LLNkpX8fa-0MVFW2eHQ&oe=6A2D344F&_nc_sid=5e03e0',
+      jpegThumbnail: <Buffer ff d8 ff e0 00 10 4a 46 49 46 00 01 01 00 00 01 00 01 00 00 ff db 00 43 00 1b 12 14 17 14 11 1b 17 16 17 1e 1c 1b 20 28 42 2b 28 25 25 28 51 3a 3d 30 ... 707 more bytes>,
+      contextInfo: [ContextInfo],
+      thumbnailDirectPath: '/m1/v/t24/An9q4IbRxUWJ2eojDG_msP3ZgPUNb4zWuOhXTK22pyFM8unaoBJ3VcOU50M3FK9tT27EusU_MkQKBYWLZrOf3co7AaUXCOPvKmCj7F9Vbd21kfap08dFROaEMPSKxNYf2-mY_BQAGwHDMjItSDcwK6ZR5A?ccb=10-5&oh=01_Q5Aa4gEFmTl_2-juo57PqkUycGsn6jRXOkl3XiyXjygNuaF5Ag&oe=6A2D3661&_nc_sid=5e03e0',
+      thumbnailSha256: <Buffer d7 a2 58 52 1b 6d 4a 04 ef de 97 cb 61 de 64 2e 9d a2 13 db 64 31 05 ae ed 73 1f 12 7d 18 01 05>,
+      thumbnailEncSha256: <Buffer >,
+      imageSourceType: 0
     }
   },
-  body: 'Cll 1 44 44',
-  name: 'Ricardo',
-  from: '573054262668',
+  body: '_event_media__b322870c-c18a-4cea-a178-4482d1651402',
+  name: undefined,
+  from: '120363379800460266@newsletter',
   host: '573233714025'
 }
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_1070e678-4f00-4e9c-a713-0cf906302862',
-  keyword: 'key_efc00879-ac84-42f2-9617-ef8364f5c357',
-  answer: '🩺👩‍⚕️👨🏻‍⚕️💉 La consulta a domicilio con uno de nuestros veterinarios:\n' +
-    '• Diagnóstico de tu mascota\n' +
-    '• Información del tratamiento a seguir\n' +
-    '• Valor: $40.000 mil pesos\n' +
-    '• Incluye el domicilio\n' +
-    '\n' +
-    '🗓 ¿Desea agendarlo?\n' +
-    'Por favor escribe: ✅ Si o ❎ No',
-  options: {
-    media: undefined,
-    buttons: [],
-    capture: false,
-    delay: 0,
-    idle: undefined,
-    ref: undefined,
-    nested: [ [Object], [Object], [Object], [Object] ],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '9857343fe42209c90900cc87ec508a9c'
+Error al encolar (ID ans_601c6846-5dea-4047-a4a9-37d06c4069b4): Error: Queue item timeout after 50000ms
+    at Timeout._onTimeout (C:\RAMP\otro\chatbot-kyk\node_modules\@builderbot\bot\dist\index.cjs:845:24)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+[ERROR ID (ans_601c6846-5dea-4047-a4a9-37d06c4069b4)]:  Error: Connection Closed
+    at sendRawMessage (file:///C:/RAMP/otro/chatbot-kyk/node_modules/@builderbot/provider-baileys/node_modules/baileys/lib/Socket/socket.js:50:19)
+    at sendNode (file:///C:/RAMP/otro/chatbot-kyk/node_modules/@builderbot/provider-baileys/node_modules/baileys/lib/Socket/socket.js:69:16)
+    at file:///C:/RAMP/otro/chatbot-kyk/node_modules/@builderbot/provider-baileys/node_modules/baileys/lib/Socket/messages-send.js:729:19
+    at async file:///C:/RAMP/otro/chatbot-kyk/node_modules/@builderbot/provider-baileys/node_modules/baileys/lib/Utils/auth-utils.js:220:36 {
+  data: null,
+  isBoom: true,
+  isServer: false,
+  output: {
+    statusCode: 428,
+    payload: {
+      statusCode: 428,
+      error: 'Precondition Required',
+      message: 'Connection Closed'
+    },
+    headers: {}
+  }
+}
+Error en sendProviderAndSave (ID ans_601c6846-5dea-4047-a4a9-37d06c4069b4): Error: Connection Closed
+    at sendRawMessage (file:///C:/RAMP/otro/chatbot-kyk/node_modules/@builderbot/provider-baileys/node_modules/baileys/lib/Socket/socket.js:50:19)
+    at sendNode (file:///C:/RAMP/otro/chatbot-kyk/node_modules/@builderbot/provider-baileys/node_modules/baileys/lib/Socket/socket.js:69:16)
+    at file:///C:/RAMP/otro/chatbot-kyk/node_modules/@builderbot/provider-baileys/node_modules/baileys/lib/Socket/messages-send.js:729:19
+    at async file:///C:/RAMP/otro/chatbot-kyk/node_modules/@builderbot/provider-baileys/node_modules/baileys/lib/Utils/auth-utils.js:220:36 {
+  data: null,
+  isBoom: true,
+  isServer: false,
+  output: {
+    statusCode: 428,
+    payload: {
+      statusCode: 428,
+      error: 'Precondition Required',
+      message: 'Connection Closed'
+    },
+    headers: {}
+  }
 }

@@ -171,3 +171,7 @@ npm install
 ## 📝 Licencia
 
 ISC
+
+### Documentacion oficial:
+- https://github.com/codigoencasa/builderbot/tree/builderbot/starters/apps/base-js-baileys-memory
+- https://www.builderbot.app

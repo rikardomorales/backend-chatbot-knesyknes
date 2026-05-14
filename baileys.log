@@ -21,3 +21,153 @@
 [2026-05-14T02:46:36.060Z] Connection update: undefined
 [2026-05-14T02:46:36.060Z] Connection update: open
 [2026-05-14T02:46:36.060Z] Connection opened successfully
+[2026-05-14T03:00:37.277Z] Connection update: connecting
+[2026-05-14T03:00:38.488Z] Connection update: undefined
+[2026-05-14T03:00:38.647Z] Connection update: undefined
+[2026-05-14T03:00:38.647Z] Connection update: open
+[2026-05-14T03:00:38.647Z] Connection opened successfully
+[2026-05-14T03:48:36.445Z] Connection update: close
+[2026-05-14T03:48:36.445Z] Connection closed. Status: 408, Reason: Connection was lost
+[2026-05-14T03:48:36.446Z] Reconnection attempt 1/10 in 1000ms
+[2026-05-14T03:48:37.467Z] Connection update: connecting
+[2026-05-14T03:48:37.468Z] Connection update: close
+[2026-05-14T03:48:37.468Z] Connection closed. Status: 408, Reason: WebSocket Error (getaddrinfo ENOTFOUND web.whatsapp.com)
+[2026-05-14T03:48:37.468Z] Reconnection attempt 2/10 in 2000ms
+[2026-05-14T03:48:39.498Z] Connection update: connecting
+[2026-05-14T03:48:40.754Z] Connection update: undefined
+[2026-05-14T03:48:40.781Z] Connection update: undefined
+[2026-05-14T03:48:40.781Z] Connection update: open
+[2026-05-14T03:48:40.781Z] Connection opened successfully
+[2026-05-14T03:53:15.862Z] Connection update: connecting
+[2026-05-14T03:53:17.817Z] Connection update: undefined
+[2026-05-14T03:53:17.958Z] Connection update: undefined
+[2026-05-14T03:53:17.958Z] Connection update: open
+[2026-05-14T03:53:17.958Z] Connection opened successfully
+[2026-05-14T12:57:22.388Z] Connection update: connecting
+[2026-05-14T12:57:23.106Z] Connection update: undefined
+[2026-05-14T12:57:23.107Z] QR Code received
+[2026-05-14T12:58:03.139Z] Connection update: undefined
+[2026-05-14T12:58:03.139Z] QR Code received
+[2026-05-14T12:58:43.156Z] Connection update: undefined
+[2026-05-14T12:58:43.156Z] QR Code received
+[2026-05-14T12:59:23.176Z] Connection update: undefined
+[2026-05-14T12:59:23.176Z] QR Code received
+[2026-05-14T13:00:03.187Z] Connection update: undefined
+[2026-05-14T13:00:03.187Z] QR Code received
+[2026-05-14T13:00:43.198Z] Connection update: undefined
+[2026-05-14T13:00:43.199Z] QR Code received
+[2026-05-14T13:00:53.104Z] Connection update: close
+[2026-05-14T13:00:53.104Z] Connection closed. Status: 428, Reason: Connection Terminated by Server
+[2026-05-14T13:00:53.104Z] Reconnection attempt 1/10 in 1000ms
+[2026-05-14T13:00:54.144Z] Connection update: connecting
+[2026-05-14T13:00:54.976Z] Connection update: undefined
+[2026-05-14T13:00:54.977Z] QR Code received
+[2026-05-14T13:01:34.989Z] Connection update: undefined
+[2026-05-14T13:01:34.989Z] QR Code received
+[2026-05-14T13:01:51.271Z] Connection update: undefined
+[2026-05-14T13:01:52.504Z] Connection update: close
+[2026-05-14T13:01:52.504Z] Connection closed. Status: 515, Reason: Stream Errored (restart required)
+[2026-05-14T13:01:52.504Z] Reconnection attempt 2/10 in 2000ms
+[2026-05-14T13:01:54.523Z] Connection update: connecting
+[2026-05-14T13:01:57.594Z] Connection update: undefined
+[2026-05-14T13:01:57.718Z] Connection update: undefined
+[2026-05-14T13:01:57.718Z] Connection update: open
+[2026-05-14T13:01:57.718Z] Connection opened successfully
+[2026-05-14T13:05:24.989Z] Connection update: connecting
+[2026-05-14T13:05:25.973Z] Connection update: undefined
+[2026-05-14T13:05:26.037Z] Connection update: undefined
+[2026-05-14T13:05:26.037Z] Connection update: open
+[2026-05-14T13:05:26.037Z] Connection opened successfully
+[2026-05-14T13:09:35.307Z] Connection update: connecting
+[2026-05-14T13:09:36.917Z] Connection update: undefined
+[2026-05-14T13:09:37.100Z] Connection update: undefined
+[2026-05-14T13:09:37.100Z] Connection update: open
+[2026-05-14T13:09:37.100Z] Connection opened successfully
+[2026-05-14T13:11:53.619Z] Connection update: connecting
+[2026-05-14T13:11:54.455Z] Connection update: undefined
+[2026-05-14T13:11:54.568Z] Connection update: undefined
+[2026-05-14T13:11:54.568Z] Connection update: open
+[2026-05-14T13:11:54.568Z] Connection opened successfully
+[2026-05-14T13:32:02.316Z] Unhandled Rejection at: Promise {
+  <rejected> TypeError: Cannot read properties of undefined (reading 'ev')
+      at setupAudioListener (file:///C:/RAMP/otro/chatbot-kyk/src/app.js:75:21)
+      at main (file:///C:/RAMP/otro/chatbot-kyk/src/app.js:381:5)
+} reason: TypeError: Cannot read properties of undefined (reading 'ev')
+    at setupAudioListener (file:///C:/RAMP/otro/chatbot-kyk/src/app.js:75:21)
+    at main (file:///C:/RAMP/otro/chatbot-kyk/src/app.js:381:5)
+[2026-05-14T13:32:49.351Z] Unhandled Rejection at: Promise {
+  <rejected> TypeError: Cannot read properties of undefined (reading 'ev')
+      at setupAudioListener (file:///C:/RAMP/otro/chatbot-kyk/src/app.js:75:21)
+      at main (file:///C:/RAMP/otro/chatbot-kyk/src/app.js:381:5)
+} reason: TypeError: Cannot read properties of undefined (reading 'ev')
+    at setupAudioListener (file:///C:/RAMP/otro/chatbot-kyk/src/app.js:75:21)
+    at main (file:///C:/RAMP/otro/chatbot-kyk/src/app.js:381:5)
+[2026-05-14T13:34:59.779Z] Connection update: connecting
+[2026-05-14T13:35:01.226Z] Connection update: undefined
+[2026-05-14T13:35:01.413Z] Connection update: undefined
+[2026-05-14T13:35:01.413Z] Connection update: open
+[2026-05-14T13:35:01.413Z] Connection opened successfully
+[2026-05-14T14:01:14.088Z] Connection update: connecting
+[2026-05-14T14:01:16.635Z] Connection update: undefined
+[2026-05-14T14:01:16.785Z] Connection update: undefined
+[2026-05-14T14:01:16.786Z] Connection update: open
+[2026-05-14T14:01:16.786Z] Connection opened successfully
+[2026-05-14T14:06:57.238Z] Connection update: connecting
+[2026-05-14T14:06:58.222Z] Connection update: undefined
+[2026-05-14T14:06:58.393Z] Connection update: undefined
+[2026-05-14T14:06:58.394Z] Connection update: open
+[2026-05-14T14:06:58.394Z] Connection opened successfully
+[2026-05-14T14:16:50.984Z] Connection update: connecting
+[2026-05-14T14:16:52.000Z] Connection update: undefined
+[2026-05-14T14:16:52.167Z] Connection update: undefined
+[2026-05-14T14:16:52.167Z] Connection update: open
+[2026-05-14T14:16:52.167Z] Connection opened successfully
+[2026-05-14T14:18:27.515Z] Connection update: connecting
+[2026-05-14T14:18:29.507Z] Connection update: undefined
+[2026-05-14T14:18:29.637Z] Connection update: undefined
+[2026-05-14T14:18:29.637Z] Connection update: open
+[2026-05-14T14:18:29.637Z] Connection opened successfully
+[2026-05-14T14:19:45.956Z] Connection update: connecting
+[2026-05-14T14:19:48.327Z] Connection update: undefined
+[2026-05-14T14:19:48.469Z] Connection update: undefined
+[2026-05-14T14:19:48.469Z] Connection update: open
+[2026-05-14T14:19:48.469Z] Connection opened successfully
+[2026-05-14T14:28:40.651Z] Connection update: connecting
+[2026-05-14T14:28:41.532Z] Connection update: undefined
+[2026-05-14T14:28:41.676Z] Connection update: undefined
+[2026-05-14T14:28:41.677Z] Connection update: open
+[2026-05-14T14:28:41.677Z] Connection opened successfully
+[2026-05-14T14:29:16.013Z] Connection update: close
+[2026-05-14T14:29:16.013Z] Connection closed. Status: 500, Reason: Stream Errored (xml-not-well-formed)
+[2026-05-14T14:29:16.013Z] Reconnection attempt 1/10 in 1000ms
+[2026-05-14T14:29:17.032Z] Connection update: connecting
+[2026-05-14T14:29:19.055Z] Connection update: undefined
+[2026-05-14T14:29:19.223Z] Connection update: undefined
+[2026-05-14T14:29:19.224Z] Connection update: open
+[2026-05-14T14:29:19.224Z] Connection opened successfully
+[2026-05-14T14:30:05.924Z] Unhandled Rejection at: Promise {
+  <rejected> Error: Queue item timeout after 50000ms
+      at Timeout._onTimeout (C:\RAMP\otro\chatbot-kyk\node_modules\@builderbot\bot\dist\index.cjs:845:24)
+      at listOnTimeout (node:internal/timers:605:17)
+      at process.processTimers (node:internal/timers:541:7)
+} reason: Error: Queue item timeout after 50000ms
+    at Timeout._onTimeout (C:\RAMP\otro\chatbot-kyk\node_modules\@builderbot\bot\dist\index.cjs:845:24)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+[2026-05-14T14:30:16.992Z] Connection update: close
+[2026-05-14T14:30:16.992Z] Connection closed. Status: 500, Reason: Stream Errored (xml-not-well-formed)
+[2026-05-14T14:30:16.992Z] Reconnection attempt 1/10 in 1000ms
+[2026-05-14T14:30:18.008Z] Connection update: connecting
+[2026-05-14T14:30:20.053Z] Connection update: undefined
+[2026-05-14T14:30:20.225Z] Connection update: undefined
+[2026-05-14T14:30:20.225Z] Connection update: open
+[2026-05-14T14:30:20.225Z] Connection opened successfully
+[2026-05-14T14:31:06.879Z] Unhandled Rejection at: Promise {
+  <rejected> Error: Queue item timeout after 50000ms
+      at Timeout._onTimeout (C:\RAMP\otro\chatbot-kyk\node_modules\@builderbot\bot\dist\index.cjs:845:24)
+      at listOnTimeout (node:internal/timers:605:17)
+      at process.processTimers (node:internal/timers:541:7)
+} reason: Error: Queue item timeout after 50000ms
+    at Timeout._onTimeout (C:\RAMP\otro\chatbot-kyk\node_modules\@builderbot\bot\dist\index.cjs:845:24)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)

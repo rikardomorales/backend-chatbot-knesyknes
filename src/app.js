@@ -1,11 +1,111 @@
-import { createBot, createProvider, createFlow, addKeyword } from '@builderbot/bot'
+import { createBot, createProvider, createFlow, addKeyword, EVENTS } from '@builderbot/bot'
 import { MemoryDB as Database } from '@builderbot/bot'
 import { BaileysProvider as Provider } from '@builderbot/provider-baileys'
+import { downloadMediaMessage } from '@whiskeysockets/baileys'
+import { exec } from 'child_process'
+import { promisify } from 'util'
+import fs from 'fs'
 
+const execAsync = promisify(exec)
 const PORT = process.env.PORT ?? 3008
 
 // Números de asesores
 const numeroAsesor1 = '573054262668@s.whatsapp.net'
+
+/**
+ * Función auxiliar para convertir OPUS/OGG a WAV usando FFmpeg
+ */
+const convertToWav = async (inputPath) => {
+    try {
+        const outputPath = inputPath.replace(/\.[^.]+$/, '.wav')
+        
+        // Verificar que FFmpeg esté instalado
+        try {
+            await execAsync('ffmpeg -version')
+        } catch (error) {
+            console.warn('⚠️ FFmpeg no está instalado')
+            return null
+        }
+        
+        // Convertir a WAV (16kHz, mono, PCM 16-bit)
+        console.log(`🔄 Convirtiendo ${inputPath} a WAV...`)
+        await execAsync(
+            `ffmpeg -i "${inputPath}" -ar 16000 -ac 1 -c:a pcm_s16le "${outputPath}" -y -loglevel error`
+        )
+        
+        console.log(`✅ Convertido a: ${outputPath}`)
+        
+        // Eliminar el archivo original
+        fs.unlinkSync(inputPath)
+        
+        return outputPath
+    } catch (error) {
+        console.error('❌ Error al convertir audio:', error.message)
+        return null
+    }
+}
+
+/**
+ * Función auxiliar para transcribir audios con whisper.cpp
+ */
+const transcribeAudio = async (audioPath) => {
+    try {
+        const whisperPath = process.platform === 'win32' 
+            ? './whisper.cpp/main.exe' 
+            : './whisper.cpp/main'
+        // Usar modelo MEDIUM para mejor precisión
+        const modelPath = './whisper.cpp/models/ggml-medium.bin'
+        
+        // Verificar que existan los archivos
+        if (!fs.existsSync(whisperPath)) {
+            console.warn(`⚠️ whisper.cpp no encontrado en: ${whisperPath}`)
+            return null
+        }
+        if (!fs.existsSync(modelPath)) {
+            console.warn(`⚠️ Modelo no encontrado en: ${modelPath}`)
+            return null
+        }
+
+        // Convertir a WAV si no lo es
+        let wavPath = audioPath
+        if (!audioPath.endsWith('.wav')) {
+            console.log('🔄 Audio no es WAV, convirtiendo...')
+            wavPath = await convertToWav(audioPath)
+            if (!wavPath) {
+                return null
+            }
+        }
+
+        // Ejecutar whisper.cpp con idioma español
+        console.log('🔄 Ejecutando whisper.cpp...')
+        const { stdout, stderr } = await execAsync(
+            `"${whisperPath}" -m "${modelPath}" -l es "${wavPath}" -otxt`
+        )
+
+        // Leer el archivo de transcripción
+        // whisper.cpp genera el archivo como "archivo.wav.txt" no "archivo.txt"
+        const txtFile = `${wavPath}.txt`
+        
+        if (!fs.existsSync(txtFile)) {
+            console.warn('⚠️ No se generó el archivo de transcripción')
+            console.warn('Buscando:', txtFile)
+            console.warn('stdout:', stdout)
+            console.warn('stderr:', stderr)
+            return null
+        }
+
+        const transcription = fs.readFileSync(txtFile, 'utf-8').trim()
+        
+        // Limpiar archivos
+        if (fs.existsSync(wavPath)) fs.unlinkSync(wavPath)
+        if (fs.existsSync(txtFile)) fs.unlinkSync(txtFile)
+        
+        return transcription
+    } catch (error) {
+        console.error('❌ Error al transcribir:', error.message)
+        return null
+    }
+}
 
 /**
  * Flow: Agradecimiento
@@ -13,6 +113,86 @@ const numeroAsesor1 = '573054262668@s.whatsapp.net'
  */
 const flowAgradecimiento = addKeyword(['gracias', 'thanks', 'thank you'])
     .addAnswer(['Muchas gracias a ti, por contactarnos 😊'])
+
+/**
+ * Función para configurar el listener de audios
+ * Se ejecuta después de que el bot esté inicializado
+ */
+const setupAudioListener = (provider) => {
+    console.log('🎙️ Configurando listener de audios...')
+    
+    provider.vendor.ev.on('messages.upsert', async ({ messages }) => {
+        try {
+            const m = messages[0]
+            if (!m.message) return
+            
+            // Verificar si es un mensaje de audio/voz
+            const isAudio = m.message?.audioMessage
+            
+            if (!isAudio) return
+            
+            console.log('🎙️ AUDIO DETECTADO!')
+            console.log('📱 De:', m.key.remoteJid)
+            console.log('📝 Tipo:', m.message.audioMessage.mimetype)
+            
+            // Crear carpeta de audios si no existe
+            const audioDir = './audios'
+            if (!fs.existsSync(audioDir)) {
+                fs.mkdirSync(audioDir, { recursive: true })
+            }
+            
+            // Descargar el audio
+            console.log('📥 Descargando audio...')
+            const buffer = await downloadMediaMessage(m, 'buffer', {}, {
+                reuploadRequest: provider.vendor.updateMediaMessage,
+                logger: undefined
+            })
+            
+            // Guardar el audio
+            const timestamp = Date.now()
+            const audioPath = `${audioDir}/audio_${timestamp}.ogg`
+            fs.writeFileSync(audioPath, buffer)
+            console.log('✅ Audio guardado en:', audioPath)
+            
+            // Enviar mensaje de confirmación
+            await provider.vendor.sendMessage(m.key.remoteJid, {
+                text: '🎙️ Recibí tu nota de voz, transcribiendo...'
+            })
+            
+            // Transcribir el audio
+            console.log('🔄 Transcribiendo...')
+            const transcription = await transcribeAudio(audioPath)
+            
+            if (!transcription) {
+                await provider.vendor.sendMessage(m.key.remoteJid, {
+                    text: '⚠️ No pude transcribir el audio.\n\n' +
+                          '**Requisitos faltantes:**\n' +
+                          '1. FFmpeg (para convertir OPUS → WAV)\n' +
+                          '2. Whisper.cpp (para transcribir)\n\n' +
+                          '**Instalar FFmpeg en Windows:**\n' +
+                          '• Descarga: https://ffmpeg.org/download.html\n' +
+                          '• O usa: winget install ffmpeg\n\n' +
+                          'Ver: doc/INSTALAR_WHISPER_WINDOWS.md'
+                })
+                return
+            }
+            
+            console.log('📝 Transcripción:', transcription)
+            
+            // Enviar la transcripción
+            await provider.vendor.sendMessage(m.key.remoteJid, {
+                text: `✅ Transcripción completada:\n\n"${transcription}"\n\n---\nEscribe "menú" para volver al inicio`
+            })
+            
+        } catch (error) {
+            console.error('❌ Error al procesar audio:', error.message)
+        }
+    })
+    
+    console.log('✅ Listener de audios configurado')
+}
+
+
 
 /**
  * Flow: Confirmación de cita (Si)
@@ -240,8 +420,6 @@ const main = async () => {
     ])
 
     // Configurar provider con versión de WhatsApp compatible
-    // Si tienes problemas de AUTH, actualiza la versión aquí
-    // Puedes verificar la versión en: https://wppconnect.io/whatsapp-versions/
     const adapterProvider = createProvider(Provider, {
         version: [2, 3000, 1035824857]
     })
@@ -259,6 +437,12 @@ const main = async () => {
     httpServer(+PORT)
     console.log(`✅ Bot iniciado en puerto ${PORT}`)
     console.log(`📱 Abre http://localhost:${PORT}/ para escanear el QR`)
+    
+    // Configurar el listener de audios DESPUÉS de que el proveedor esté listo
+    adapterProvider.on('ready', () => {
+        console.log('🤖 Bot conectado y listo')
+        setupAudioListener(adapterProvider)
+    })
 }
 
 main()
