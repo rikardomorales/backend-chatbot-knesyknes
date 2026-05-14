@@ -1,29 +1,21 @@
 {
-    "name": "base-bailey-memory",
-    "version": "1.0.0",
-    "description": "",
-    "main": "app.js",
-    "scripts": {
-        "prestart": "npx eslint . --no-ignore",
-        "pre-copy": "cd .. && npm run  copy.lib base-baileys-memory",
-        "start": "node app.js"
-    },
-    "keywords": [],
-    "dependencies": {
-        "@bot-whatsapp/bot": "latest",
-        "@bot-whatsapp/cli": "latest",
-        "@bot-whatsapp/database": "latest",
-        "@bot-whatsapp/portal": "latest",
-        "@bot-whatsapp/provider": "latest",
-        "@whiskeysockets/baileys": "6.5.0",
-        "cache-manager": "5.2.4",
-        "sharp": "^0.33.2",
-        "wa-sticker-formatter": "4.4.4"
-    },
-    "devDependencies": {
-        "eslint": "^8.52.0",
-        "eslint-plugin-bot-whatsapp": "latest"
-    },
-    "author": "",
-    "license": "ISC"
+  "name": "knes-veterinaria-bot",
+  "version": "1.0.0",
+  "description": "Chatbot WhatsApp para Knes y Knes Veterinaria",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "dev": "node --watch ./src/app.js"
+  },
+  "keywords": ["builderbot", "whatsapp", "chatbot", "veterinaria"],
+  "dependencies": {
+    "@builderbot/bot": "latest",
+    "@builderbot/provider-baileys": "latest"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  },
+  "author": "",
+  "license": "ISC"
 }

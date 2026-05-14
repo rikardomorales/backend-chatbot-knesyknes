@@ -1,138 +1,242 @@
 [handleMsg]:  {
   key: {
-    remoteJid: '573122009025@s.whatsapp.net',
+    remoteJid: '89631806775400@lid',
+    remoteJidAlt: '573054262668@s.whatsapp.net',
     fromMe: false,
-    id: 'F9C80F24FB3948B48CC38F11ABC14D29',
-    participant: undefined
+    id: 'AC7A6126AA8AF99AFA91D97976359118',
+    participant: '',
+    participantAlt: undefined,
+    addressingMode: 'lid'
   },
-  messageTimestamp: 1752700723,
-  pushName: '🐥',
+  category: undefined,
+  messageTimestamp: 1778726829,
+  pushName: 'Ricardo',
   broadcast: false,
   message: Message {
-    conversation: 'Buenas tardes, mañana si Dios quiere pueden acá en Zamorano?',
+    conversation: 'Hola',
     messageContextInfo: MessageContextInfo {
+      threadId: [],
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2,
       messageSecret: [Uint8Array]
     }
   },
-  body: 'Buenas tardes, mañana si Dios quiere pueden acá en Zamorano?',
-  from: '573122009025'
+  body: 'Hola',
+  name: 'Ricardo',
+  from: '573054262668',
+  host: '573233714025'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_d2e7871f-4aab-4368-95c6-9ad451f4107a',
-  keyword: 'key_fd35fe7e-f827-489a-8a81-ea9a3af540b4',
-  answer: '🙌 Hola, es un gusto saludarte, Bienvenido soy Kan, el 🤖 *Chatbot* de Knes y Knes 🏥 Veterinaria\n' +
+  ref: 'ans_d050bea1-3b33-4285-ade6-c5c47fbb13bf',
+  keyword: 'key_7a57b1cc-51fc-41bf-8573-ba90c5535b84',
+  answer: '🙌 Hola, es un gusto saludarte\n' +
+    'Bienvenido soy Kan, el 🤖 *Chatbot* de Knes y Knes 🏥 Veterinaria\n' +
     '\n' +
-    'En que podemos ayudarte, por favor escribe el número de la opción que necesites: \n' +
-    '\n' +
-    '✅  "1", Consulta, para agendar una cita con uno de nuestros veterinarios 🩺👩‍⚕️👨🏻‍⚕️\n' +
-    '✅  "2", Control Perro, Incluye vacunas\n' +
-    '✅  "3", Control Gato, Incluye vacunas\n' +
-    '✅  "4", Hablar, para contactar uno de nuestros asesores\n' +
-    '\n' +
-    'En cualquier momento de la conversación puedes escribir la palabra "Menú", para volver al inicio',
+    'En que podemos ayudarte, por favor escribe el número de la opción que necesites:',
   options: {
-    media: null,
+    media: undefined,
     buttons: [],
     capture: false,
-    child: null,
     delay: 0,
-    idle: null,
-    ref: null,
-    nested: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '7fb01b63a51c39adcf216364ede0fdd3'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573122009025@s.whatsapp.net',
-    fromMe: false,
-    id: 'A393DFE38E09011C827CB39273182C19',
-    participant: undefined
-  },
-  messageTimestamp: 1752700812,
-  pushName: '🐥',
-  broadcast: false,
-  message: Message {
-    conversation: 'Gracias estoy en casa hasta las 3',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'Gracias estoy en casa hasta las 3',
-  from: '573122009025'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_f2281db8-6e67-4c8e-8ce7-b67456d289cb',
-  keyword: 'key_10b1f862-7411-44cd-bc78-4cdcd8ff0f8d',
-  answer: '🩺👩‍⚕️👨🏻‍⚕️💉 Tenemos un paquete promocional 💊 para su mascota, incluye:\n' +
-    '\n' +
-    '✅ Vacunas\n' +
-    '✅ Desparasitación.\n' +
-    '✅ Vitaminas.\n' +
-    '✅ Complejo B.\n' +
-    '✅ Calcio.\n' +
-    '\n' +
-    'Valor: $70.000, incluye domicilio\n' +
-    '\n' +
-    '🗓¿Desea agendarlo?.\n' +
-    '\n' +
-    'por favor escribe la opción que necesites, ✅ Si,  ❎No',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [ [Object], [Object], [Object], [Object] ],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: 'b36166b912bf130e9fa6cccb1c77d543'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573122009025@s.whatsapp.net',
-    fromMe: false,
-    id: '52BEE24014719714BF8570832912078B',
-    participant: undefined
-  },
-  messageTimestamp: 1752700840,
-  pushName: '🐥',
-  broadcast: false,
-  message: Message {
-    conversation: 'Calle 67B número 28A 08 ciudadela comfaunion. Zamorano',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'Calle 67B número 28A 08 ciudadela comfaunion. Zamorano',
-  from: '573122009025'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_7ba29f4d-b161-4ff8-9f29-ee2378fcf51a',
-  keyword: 'key_a4e31345-e428-4c21-be4d-a59da7cae0cb',
-  answer: '¡Muchas gracias por contactarnos!, recuerda que en cualquier momento de la conversación puedes escribir 🤳🏼 la palabra "Menu", para volver al inicio 🏚',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
+    idle: undefined,
+    ref: undefined,
     nested: [],
     keyword: {},
     callback: false
   },
-  refSerialize: '9d3e506e8d1f38af7dc758fa58e0d0ec'
+  refSerialize: 'b2dedd08112b488fe47665b514df734c'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_46c8adb1-a6d8-4eba-9d93-e1dcff1782b8',
+  keyword: 'ans_d050bea1-3b33-4285-ade6-c5c47fbb13bf',
+  answer: '✅ "1" - Consulta a domicilio con veterinario 🩺👩‍⚕️👨🏻‍⚕️\n' +
+    '✅ "2" - Control Perro (incluye vacunas)\n' +
+    '✅ "3" - Control Gato (incluye vacunas)\n' +
+    '✅ "4" - Hablar con un asesor\n' +
+    '\n' +
+    'En cualquier momento puedes escribir "Menú" para volver al inicio',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'bd21f88cadcd2612e61d26dae1c6a175'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_1d3fa41e-b9f1-4490-a396-9585f9c12839',
+  keyword: 'ans_46c8adb1-a6d8-4eba-9d93-e1dcff1782b8',
+  answer: '__capture_only_intended__',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: true,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '78173b55dbacc36adbf5df91ae088aee'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '89631806775400@lid',
+    remoteJidAlt: '573054262668@s.whatsapp.net',
+    fromMe: false,
+    id: 'AC7A1DBD50325F057A97F0436FE47246',
+    participant: '',
+    participantAlt: undefined,
+    addressingMode: 'lid'
+  },
+  category: undefined,
+  messageTimestamp: 1778726836,
+  pushName: 'Ricardo',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      threadId: [],
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: '1',
+  name: 'Ricardo',
+  from: '573054262668',
+  host: '573233714025'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_1070e678-4f00-4e9c-a713-0cf906302862',
+  keyword: 'key_efc00879-ac84-42f2-9617-ef8364f5c357',
+  answer: '🩺👩‍⚕️👨🏻‍⚕️💉 La consulta a domicilio con uno de nuestros veterinarios:\n' +
+    '• Diagnóstico de tu mascota\n' +
+    '• Información del tratamiento a seguir\n' +
+    '• Valor: $40.000 mil pesos\n' +
+    '• Incluye el domicilio\n' +
+    '\n' +
+    '🗓 ¿Desea agendarlo?\n' +
+    'Por favor escribe: ✅ Si o ❎ No',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [ [Object], [Object], [Object], [Object] ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '236a28fbbdf7b11fa595038081711bd8'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '89631806775400@lid',
+    remoteJidAlt: '573054262668@s.whatsapp.net',
+    fromMe: false,
+    id: 'AC0D78646D38273EF19EC3D74E773671',
+    participant: '',
+    participantAlt: undefined,
+    addressingMode: 'lid'
+  },
+  category: undefined,
+  messageTimestamp: 1778726843,
+  pushName: 'Ricardo',
+  broadcast: false,
+  message: Message {
+    conversation: 'Si',
+    messageContextInfo: MessageContextInfo {
+      threadId: [],
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Si',
+  name: 'Ricardo',
+  from: '573054262668',
+  host: '573233714025'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_6b7d774b-e94a-4a7f-a40c-32d1c7d0844f',
+  keyword: 'key_4ea26fcd-af5d-431a-8ba1-1a860d2a31a2',
+  answer: '📝 Por favor ingrese su dirección',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: true,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '3137e5d355df44f75d08911d1f2fccf0'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '89631806775400@lid',
+    remoteJidAlt: '573054262668@s.whatsapp.net',
+    fromMe: false,
+    id: 'ACA15311F824AB2DA50D4799FA91F837',
+    participant: '',
+    participantAlt: undefined,
+    addressingMode: 'lid'
+  },
+  category: undefined,
+  messageTimestamp: 1778726851,
+  pushName: 'Ricardo',
+  broadcast: false,
+  message: Message {
+    conversation: 'Cll 1 44 44',
+    messageContextInfo: MessageContextInfo {
+      threadId: [],
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Cll 1 44 44',
+  name: 'Ricardo',
+  from: '573054262668',
+  host: '573233714025'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_1070e678-4f00-4e9c-a713-0cf906302862',
+  keyword: 'key_efc00879-ac84-42f2-9617-ef8364f5c357',
+  answer: '🩺👩‍⚕️👨🏻‍⚕️💉 La consulta a domicilio con uno de nuestros veterinarios:\n' +
+    '• Diagnóstico de tu mascota\n' +
+    '• Información del tratamiento a seguir\n' +
+    '• Valor: $40.000 mil pesos\n' +
+    '• Incluye el domicilio\n' +
+    '\n' +
+    '🗓 ¿Desea agendarlo?\n' +
+    'Por favor escribe: ✅ Si o ❎ No',
+  options: {
+    media: undefined,
+    buttons: [],
+    capture: false,
+    delay: 0,
+    idle: undefined,
+    ref: undefined,
+    nested: [ [Object], [Object], [Object], [Object] ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '9857343fe42209c90900cc87ec508a9c'
 }

@@ -1,0 +1,23 @@
+[2026-05-14T02:21:25.044Z] Iniciando limpieza de recursos...
+[2026-05-14T02:23:36.059Z] Iniciando limpieza de recursos...
+[2026-05-14T02:43:45.502Z] Connection update: connecting
+[2026-05-14T02:43:48.799Z] Connection update: close
+[2026-05-14T02:43:48.799Z] Connection closed. Status: 401, Reason: Connection Failure
+[2026-05-14T02:43:48.799Z] Logged out, clearing session and restarting...
+[2026-05-14T02:43:48.805Z] Reconnection attempt 1/10 in 1000ms
+[2026-05-14T02:43:49.833Z] Connection update: connecting
+[2026-05-14T02:43:55.078Z] Connection update: close
+[2026-05-14T02:43:55.078Z] Connection closed. Status: 405, Reason: Connection Failure
+[2026-05-14T02:43:55.079Z] Critical error, stopping reconnection attempts
+[2026-05-14T02:46:10.209Z] Connection update: connecting
+[2026-05-14T02:46:11.391Z] Connection update: undefined
+[2026-05-14T02:46:11.391Z] QR Code received
+[2026-05-14T02:46:32.519Z] Connection update: undefined
+[2026-05-14T02:46:33.297Z] Connection update: close
+[2026-05-14T02:46:33.297Z] Connection closed. Status: 515, Reason: Stream Errored (restart required)
+[2026-05-14T02:46:33.297Z] Reconnection attempt 1/10 in 1000ms
+[2026-05-14T02:46:34.326Z] Connection update: connecting
+[2026-05-14T02:46:35.953Z] Connection update: undefined
+[2026-05-14T02:46:36.060Z] Connection update: undefined
+[2026-05-14T02:46:36.060Z] Connection update: open
+[2026-05-14T02:46:36.060Z] Connection opened successfully

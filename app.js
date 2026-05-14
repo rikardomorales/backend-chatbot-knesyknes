@@ -1,18 +1,13 @@
 
-const { createBot, createProvider, createFlow, addKeyword } = require('@bot-whatsapp/bot')
-
-const QRPortalWeb = require('@bot-whatsapp/portal')
-const BaileysProvider = require('@bot-whatsapp/provider/baileys')
-const MockAdapter = require('@bot-whatsapp/database/mock')
-
-const axios = require('axios')
-
+const { createBot, createProvider, createFlow, addKeyword } = require('@builderbot/bot')
+const { BaileysProvider } = require('@builderbot/provider-baileys')
+const { MemoryDB } = require('@builderbot/bot')
 
 const flowAgradecimiento = addKeyword(['gracias']).addAnswer(['Muchas gracias a ti, por contactarnos'])
  
 let datosDeContacto;
 let mensajeAsesor;
-const numeroAsesor1 = '573246843681@s.whatsapp.net'
+const numeroAsesor1 = '573054262668@s.whatsapp.net'
 const numeroAsesor2 = '573054262668@s.whatsapp.net'
 
 const  flowSiCita = addKeyword(['Si'])
@@ -31,7 +26,7 @@ const  flowSiCita = addKeyword(['Si'])
             
 
             await provider.sendText(numeroAsesor1,mensajeAsesor)
-            await provider.sendText(numeroAsesor2,mensajeAsesor)
+           // await provider.sendText(numeroAsesor2,mensajeAsesor)
 
             await flowDynamic([
                 {body:'¡Muchas gracias!, por contactarnos 😁 , uno de nuestros veterinarios 👨🏻‍⚕️ se pondra en contacto 🤳🏼 con usted, lo antes posible'}
@@ -85,8 +80,8 @@ const  flowAsesor = addKeyword(['4'])
                               numeroDeCliente+'📱, Nos escribio los siguientes datos: '+datosDeContacto
 
   
-            //await provider.sendText(numeroAsesor1,mensajeAsesor)
-            await provider.sendText(numeroAsesor2,mensajeAsesor)
+            await provider.sendText(numeroAsesor1,mensajeAsesor)
+            //await provider.sendText(numeroAsesor2,mensajeAsesor)
 
             await flowDynamic([
                 {body:'¡Muchas gracias!, por contactarnos 😁 , uno de nuestros veterinarios 👨🏻‍⚕️ se pondra en contacto 🤳🏼 con usted, lo antes posible'}
@@ -138,7 +133,7 @@ const flowControlCompletoPerro = addKeyword(['2'])
         )
  
 const flowPrincipal = addKeyword(['hola', 'buenas tardes','Buenas noches',
-                                  'Buenos dias','Buen día','Buen dia','Buenas','menu','menú','Menú'])
+                                  'Buenos dias','Buen día','Buen dia','Buenas','menu','menú','Menú'], {sensitive: false})
     .addAnswer(
         [   '🙌 Hola, es un gusto saludarte, Bienvenido soy Kan, el 🤖 *Chatbot* de Knes y Knes 🏥 Veterinaria',
             '\nEn que podemos ayudarte, por favor escribe el número de la opción que necesites: ',
@@ -154,7 +149,7 @@ const flowPrincipal = addKeyword(['hola', 'buenas tardes','Buenas noches',
     )
   
 const main = async () => {
-    const adapterDB = new MockAdapter()
+    const adapterDB = new MemoryDB()
     const adapterFlow = createFlow([flowPrincipal,flowAgradecimiento,flowAsesor])
     const adapterProvider = createProvider(BaileysProvider)
 
@@ -163,8 +158,6 @@ const main = async () => {
         provider: adapterProvider,
         database: adapterDB,
     })
-
-    QRPortalWeb()
 }
 
 main()
